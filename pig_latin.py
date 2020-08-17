@@ -6,7 +6,7 @@ def pig_latin(text):
   words = text.split()
   for word in words:
     # Create the pig latin word and add it to the list
-    say = say+word[1:len(word)]+"ay "
+    say = say+word[1:len(word)]+word[0:1]+"ay "
     # Turn the list back into a phrase
   return say
 		
